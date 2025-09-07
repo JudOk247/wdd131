@@ -1,0 +1,160 @@
+body {
+    margin: 0 2rem;
+
+    /* navigatio bar starts here */
+}
+
+h1 {
+    margin: 10px 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #473e3e;
+    text-align: center;
+}
+
+#course-title {
+    display: block;
+    background-color: rgb(0, 40, 75);
+    color: #fff;
+    padding: 30px;
+    text-align: center;
+    font-weight: 700;
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.nav-bar {
+    background-color: black;
+    padding: 10px;
+    margin-top: 0px;
+
+}
+
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: space-around;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0;
+    font-weight: 700;
+}
+
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* navigation bar ends here */
+
+/* main/section starts here */
+.sec-div {
+    display: flex;
+    gap: 10px;
+    margin: 10px 25px;
+    height: 80%;
+}
+
+.card1 {
+    width: 70%;
+}
+
+.card2 {
+    width: 30%;
+}
+
+.card {
+    border: 1px solid #808080;
+    border-radius: 5px;
+}
+
+.sec1-div1 {
+    background-color: rgb(0, 40, 75);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sec1-div2 {
+    display: flex;
+    margin: 20px;
+}
+
+.sec1-div2 p {
+    color: #473e3e;
+    margin-top: 0px;
+    width: 80%;
+}
+
+.sec1-div2 img {
+    width: 200px;
+    height: 200px;
+}
+
+.sec1-div3 {
+    width: 80%;
+    text-align: center;
+    color: #473e3e;
+    border-bottom: 1px solid #808080;
+}
+
+.sec1-div4 {
+    display: flex;
+    width: 80%;
+    margin: 20px;
+    gap: 20px;
+}
+
+.sec1-div4 img {
+    width: 200px;
+    height: 100px;
+}
+
+.sec1-div4 p {
+    width: 55%;
+    color: #473e3e;
+    margin: 0px;
+}
+
+.sec2-div1 {
+    background-color: rgb(0, 40, 75);
+    color: #fff;
+    text-align: center;
+    padding: 1px 0;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.sec2-div2 {
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
+
+/* main ends here */
+
+/* footer starts here */
+.foot-main {
+    background-color: rgb(0, 40, 75);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+}
+
+#currentyear {
+    color: #fff;
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+#lastModified {
+    color: yellow;
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+/* footer ends here */
