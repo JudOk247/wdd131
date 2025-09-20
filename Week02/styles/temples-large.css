@@ -1,0 +1,49 @@
+/* Large screen styles */
+@media (min-width: 768px) {
+    header {
+        margin: 0 20px;
+        margin-top: 1px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: space-around;
+    }
+
+    .main-para {
+        font-weight: 700;
+        font-size: larger;
+        text-align: center;
+        padding-top: 20px;
+    }
+
+    figure {
+        width: 90%;
+    }
+
+    .hammenu {
+        display: none;
+    }
+
+    #ul-li {
+        display: flex;
+    }
+
+    #ul-li li {
+        margin-right: 20px;
+    }
+
+    #ul-li .active {
+        color: #ffff00;
+    }
+
+    /* li :hover {
+        background-color: #808080;
+        padding: 0.5em;
+    } */
+
+    footer {
+        margin: 0 20px;
+    }
+}

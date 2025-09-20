@@ -1,0 +1,167 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: rgb(0, 25, 75);
+    color: #fff;
+    padding: 2em;
+    margin: 0 20px;
+    margin-top: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Templealbum{
+    font-weight: 700;
+    font-size: xx-large;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.hammenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 25px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.hammenu span {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    margin-bottom: 5px;
+}
+
+#ul-li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+#ul-li li {
+    margin-right: 20px;
+}
+
+#ul-li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#ul-li {
+  display: none;
+}
+
+#ul-li.show {
+  display: block;
+  position: absolute;
+  top: 70px;
+  right: 0;    
+  background-color: #333;
+  padding: 1em;
+  margin-right: 20px;
+}
+
+li:hover{
+    background-color: #808080;
+    padding: 0.5rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+.main-para{
+    font-weight: 700;
+    font-size: larger;
+    text-align: center;
+    padding-top: 20px;
+}
+
+figure {
+    margin: 20px;
+    text-align: center;
+}
+
+figure img {
+    width: 70%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #0000ff;
+    text-align: center;
+}
+footer{
+    background-color: rgb(0, 25, 75);
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-weight: 700;
+    margin: 0 20px;
+}
+
+#currentyear {
+    color: #fff;
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+#lastModified {
+    color: yellow;
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+/* Small screen styles */
+@media (max-width: 768px) {
+    .Templealbum{
+        font-size: xxx-large;
+    }
+
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    figure {
+        width: 100%;
+    }
+
+    #ul-li {
+        display: none;
+
+        #ul-li.show {
+            display: block;
+            position: absolute;
+            top: 60px;
+            right: 0;
+            background-color: #333;
+            padding: 20px;
+        }
+
+        #ul-li.show li {
+            margin-bottom: 10px;
+        }
+    }
+}
