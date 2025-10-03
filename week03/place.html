@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../week03/styles/place-small.css">
+    <link rel="stylesheet" href="../week03/styles/place-large.css">
+    <script src="../week03/scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="nav">
+            <h1>Nigeria</h1>
+        </div>
+    </header>
+    <main>
+        <div class="hero-pic">
+            <picture>
+                <source media="(min-width: 768px )" srcset="../week03/Images/place-large" type="image/wabp">
+                <source media="(min-width: 480px)" srcset="../week03/Images/1530391_weather_clouds_sun_sunny_icon"
+                    type="image/svg">
+                <img src="../week03/Images/place-Hero img.webp" alt="hero image">
+            </picture>
+        </div>
+        <div class="data-container">
+            <div class="data-heading">
+                <h1>Data</h1>
+            </div>
+            <div class="data-info">
+                <div class="data-item">
+                    <span class="label">Area:</span>
+                    <span class="value">923,768sq km</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Population:</span>
+                    <span class="value">230,000,000</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Capital:</span>
+                    <span class="value">Abuja</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Language:</span>
+                    <span class="value">English</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Currency:</span>
+                    <span class="value">Naira</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Time Zone:</span>
+                    <span class="value">GNT+1</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Calling Code:</span>
+                    <span class="value">+234</span>
+                </div>
+                <div class="data-item">
+                    <span class="label">Internet:</span>
+                    <span class="value">.ng</span>
+                </div>
+            </div>
+        </div>
+        <div class="weather-container">
+            <div class="weather-head-icon">
+                <h1>Weather</h1>
+            <div class="weather-icon">
+                <img src="../week03/Images/1530391_weather_clouds_sun_sunny_icon.svg" alt="weather-icon">
+            </div>
+            </div>
+            <img src="../week03/Images/1530374_weather_day_sand_sandstorm_sun_icon.svg" alt="weather-pic">
+            <div class="weather-info">
+                <div class="weather-item">
+                    <span class="label">Temperature:</span>
+                    <span class="value">10°C</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Conditions:</span>
+                    <span class="value">Partly Cloudy</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind:</span>
+                    <span class="value">5km/h</span>
+                </div>
+                <div class="weather-item">
+                    <span class="label">Wind Chill:</span>
+                    <span class="value">9.8°C</span>
+                </div>
+            </div>
+    </main>
+    <footer class="foot">
+        &copy; <span id="currentyear"></span> | Okechukwu Jude Igatta | Nigeria
+        <br><span id="lastModified"></span>
+    </footer>
+</body>
+
+</html>
