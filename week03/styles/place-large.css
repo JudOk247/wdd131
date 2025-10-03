@@ -22,11 +22,6 @@ body {
         position: relative;
     }
 
-    .hero-pic img {
-        /* margin-top: 20px; */
-        background-color: rgb(35, 80, 35);
-    }
-
     .hero-pic picture {
         display: none;
     }
