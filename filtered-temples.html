@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temple-pictures">
+    <meta name="author" content="Okechukwu Igatta">
+    <title>Temple Album</title>
+    <link rel="stylesheet" href="week04/styles/filtered-temples.css">
+    <link rel="stylesheet" href="week04/styles/filtered-temples-large.css">
+    <script src="./week04/scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="Templealbum">Temple Album</div>
+        <nav>
+            <div class="hammenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul id="ul-li">
+                <li><a href="#" class="active" data-filter="all">Home</a></li>
+                <li><a href="#" data-filter="old">Old</a></li>
+                <li><a href="#" data-filter="new">New</a></li>
+                <li><a href="#" data-filter="large">Large</a></li>
+                <li><a href="#" data-filter="small">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="pic-grid"></div>
+    </main>
+    <footer>
+        &copy; <span id="currentyear"></span> | Okechukwu Jude Igatta | Nigeria
+        <br><span id="lastModified"></span>
+    </footer>
+</body>
+</html>

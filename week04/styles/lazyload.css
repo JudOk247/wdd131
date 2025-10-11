@@ -1,0 +1,54 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    max-width: 100%;
+}
+
+h1{
+    background-color: #333;
+    color: #fff;
+    margin-top: 0;
+    padding: 30px;
+    text-align: center;
+}
+
+img{
+    display: block;
+    width: 400px;
+    height: 600px;
+    animation: fade 20s;
+    margin: 20px auto;
+}
+
+p{
+    text-align: center;
+    margin: 0 auto;
+    width:400px;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+footer{
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 0;
+    padding: 30px;
+    font-size: larger;
+    font-weight: bold;
+    text-align: center;
+}
+
+#lastModified{
+    color: #ff0;
+}
+
