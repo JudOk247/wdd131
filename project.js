@@ -57,6 +57,19 @@ function loadQuestion() {
         option4.style.display = 'none';
         resultElement.textContent = `Your final score is ${score} out of ${quizQuestions.length}`;
     }
+    // Add a restart button
+        const restartButton = document.createElement('button');
+        restartButton.textContent = 'Restart Quiz';
+        restartButton.onclick = () => {
+            currentQuestion = 0;
+            score = 0;
+            option1.style.display = 'block';
+            option2.style.display = 'block';
+            option3.style.display = 'block';
+            option4.style.display = 'block';
+            loadQuestion();
+        };
+        questionElement.appendChild(restartButton);
 }
 
 loadQuestion();
@@ -96,7 +109,7 @@ const festivalsBtn = document.getElementById('festivals-btn');
 const galleryImages = document.getElementById('gallery-images');
 
 festivalsBtn.addEventListener('click', () => {
-    // Add functionality for festivals button
+    document.body.classList.toggle('show-gallery');
 });
 
 // Contact form functionality
