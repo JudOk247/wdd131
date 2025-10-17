@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quiz</title>
-    <link rel="stylesheet" href="/week06/project.css">
-    <script src="/week06/project.js" defer></script>
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="./project.css">
+    <script src="./project.js" defer></script>
 </head>
 <body>
     <header>
@@ -25,17 +25,17 @@
         </nav>
     </header>
     <main>
-        </section>
-        <section id="quiz">
-            <h1>Quiz</h1>
-            <div class="quiz-container">
-                <p id="question"></p>
-                <button id="option1"></button>
-                <button id="option2"></button>
-                <button id="option3"></button>
-                <button id="option4"></button>
-                <p id="result"></p>
-            </div>
+        <section>
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message"></textarea><br><br>
+                <input type="submit" value="Submit">
+            </form>
         </section>
     </main>
     <footer>
