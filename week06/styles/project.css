@@ -10,10 +10,20 @@ body {
     background-size: center;
 }
 
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 1; 
+}
+
 header {
     background-color: #000;
     color: #fff;
-    padding: 1em;
+    padding: 2.5em;
     text-align: center;
     position: fixed;
     width: 100%;
@@ -24,7 +34,7 @@ nav ul {
     margin: 0;
     padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -35,6 +45,10 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+}
+
+section {
+    margin-top: 16em;
 }
 
 main {
@@ -111,8 +125,29 @@ button:hover {
     width: 25px;
     height: 3px;
     margin: 5px auto;
+    background-color: #000;
     transition: all 0.3s ease-in-out;
-    background-color: #fff;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+.nav-menu li {
+    margin-right: 20px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #000;
 }
 
 @media (max-width: 768px) {
@@ -120,16 +155,25 @@ button:hover {
         display: block;
     }
 
-    #home {
-        margin-top: 20rem;
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        width: 100%;
+        background-color: rgb(40, 40, 40);
+        padding: 10px;
+        border-top: 1px solid #ddd;
+        margin-top: 50px;
     }
 
     .nav-menu.active {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #333;
-        padding: 20px;
+    }
+
+    .nav-menu li {
+        margin-bottom: 20px;
     }
 
     .nav-menu.active li {
@@ -140,31 +184,28 @@ button:hover {
     .nav-menu.active a {
         color: #fff;
     }
-}
 
-
-@media (max-width: 768px) {
-    .nav-menu {
-        display: none;
-        position: absolute;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        background-color: #333;
-        padding: 20px;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-menu.active {
-        display: flex;
+    #home {
+        margin-top: 20rem;
     }
 }
 
 footer {
     background-color: #000;
     color: #fff;
-    padding: 1em;
+    padding: 2em;
     text-align: center;
     clear: both;
+}
+
+#currentyear {
+    color: #fff;
+    font-weight: 700;
+    font-family: hebrew;
+}
+
+#lastModified {
+    color: yellow;
+    font-weight: 700;
+    font-family: hebrew;
 }
